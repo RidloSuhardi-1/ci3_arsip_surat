@@ -15,6 +15,13 @@ class Surat_model extends CI_Model
         return $this->db->get('surat', $limit)->result_array();
     }
 
+    public function find($keyword)
+    {
+        $this->db->like('judul', $keyword);
+        $this->db->order_by('judul', 'ASC');
+        return $this->db->get('surat')->result_array();
+    }
+
     public function get_by_id($id)
     {
         if ($id == null) {

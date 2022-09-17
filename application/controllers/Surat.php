@@ -13,11 +13,22 @@ class Surat extends CI_Controller
 
     public function index()
     {
-        $data = $this->Surat_model->get();
+        $data = null;
+        $keyword = $this->input->post('search_by_judul');
+
+        if (isset($keyword)) {
+            $data = $this->Surat_model->find($keyword);
+        } else {
+            $data = $this->Surat_model->get();
+        }
 
         $this->load->view('layouts/header');
-        $this->load->view('admin/surat/index', ['data' => $data]);
+        $this->load->view('admin/surat/index', ['data' => $data, 'keyword' => $keyword]);
         $this->load->view('layouts/footer');
+    }
+
+    public function find($keyword)
+    {
     }
 
     public function detail($id)

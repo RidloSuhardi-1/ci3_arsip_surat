@@ -11,6 +11,13 @@
   </div>
 <?php endif; ?>
 
+<form action="<?= base_url() . 'surat'; ?>" method="POST">
+  <div class="input-group mb-4 w-50">
+    <input type="text" name="search_by_judul" class="form-control" placeholder="Cari surat berdasarkan judul.." aria-label="Cari surat berdasarkan judul.." aria-describedby="button-addon2">
+    <button class="btn btn-dark" type="submit" id="button-addon2">Cari</button>
+  </div>
+</form>
+
 <div class="table-responsive">
   <table class="table table-striped table-sm">
     <thead>
