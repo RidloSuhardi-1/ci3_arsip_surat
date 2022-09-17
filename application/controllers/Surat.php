@@ -58,13 +58,11 @@ class Surat extends CI_Controller
             $file = $this->do_upload('file_surat');
 
             if (isset($file['error'])) {
-                unlink('public/uploads/' . $file['filename']);
-
                 $this->session->set_flashdata('error_file', $file['error']);
                 redirect($_SERVER['HTTP_REFERER']);
             }
 
-            if ($file['filename']) {
+            if (isset($file['filename'])) {
                 $data['file_surat'] = $file['filename'];
             }
 
@@ -120,8 +118,6 @@ class Surat extends CI_Controller
                 $file = $this->do_upload('file_surat');
 
                 if (isset($file['error'])) {
-                    unlink('public/uploads/' . $file['filename']);
-
                     $this->session->set_flashdata('error_file', $file['error']);
                     redirect($_SERVER['HTTP_REFERER']);
                 }
