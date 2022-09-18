@@ -11,7 +11,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
 
-    <link href="<?= base_url(); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>public/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -68,7 +68,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="<?= base_url(); ?>/assets/css/dashboard.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>public/css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>

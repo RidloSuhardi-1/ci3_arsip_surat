@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-2">
-            <img src="<?= base_url('assets') . '/img/ahmad-ridlo-suhardi.png' ?>" class="img-thumbnail" alt="Profile Ahmad Ridlo Suhardi" width=200>
+            <img src="<?= base_url(); ?>public/img/ahmad-ridlo-suhardi.png" class="img-thumbnail" alt="Profile Ahmad Ridlo Suhardi" width=200>
         </div>
         <div class="col-4">
             <p>Aplikasi ini dibuat oleh:</p>
