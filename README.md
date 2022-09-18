@@ -10,8 +10,8 @@ Dibangun menggunakan bahasa pemrogrmaman PHP dengan framework Code Igniter versi
 
 ## Contoh Program
 
-<img src="images/menu_1.png" width=400 />
-<img src="images/menu_2.png" width=400 />
+<img src="images/menu_1.png" />
+<img src="images/menu_2.png" />
 
 Demo aplikasi bisa dilihat disini:
 
